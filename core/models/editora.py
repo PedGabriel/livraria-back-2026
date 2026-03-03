@@ -2,8 +2,8 @@ from django.db import models
 
 
 class Editora(models.Model):
-    nome = models.CharField(max_length=30)
-    descricao = models.CharField(max_length=100)
+    site = models.URLField(blank=True, null=True)
+    nome = models.CharField(max_length=10)
 
     def __str__(self):
-        return self.nome
+        return f"{self.nome} - {self.site}"
