@@ -5,5 +5,5 @@ from core.serializers import CategoriaSerializer
 
 
 class CategoriaViewSet(ModelViewSet):
-    queryset = Categoria.objects.all().order_by('id')
+    queryset = Categoria.objects.all()
     serializer_class = CategoriaSerializer
