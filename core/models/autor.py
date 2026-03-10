@@ -7,3 +7,7 @@ class Autor(models.Model):
 
     def __str__(self):
         return f"{self.nome} - {self.email}"
+
+    class Meta:
+        verbose_name = "autor"
+        verbose_name_plural = "autores"
